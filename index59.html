@@ -1,0 +1,38 @@
+<!DOCTYPE HTML> 
+<html> 
+<head> 
+    <title>Свойства объекта Document</title> 
+    <script>
+        function show() {
+            var bgc = document.bgColor.valueOf(); 
+            var fgc = document.fgColor.valueOf(); 
+            var lc = document.linkColor.valueOf(); 
+            var al = document.alinkColor.valueOf(); 
+            var vlc = document.vlinkColor.valueOf(); 
+            var url = document.location.href; 
+            var ref = document.referrer; 
+            var t = document.title; 
+            var lm = document.lastModified; 
+
+            document.bgColor = "#110011";
+            document.fgColor = "#000000";
+            document.linkColo = "#0000FF";
+            document.alinkColor = "#6A5ACD";
+            document.vlinkColor = "#606E8C";
+
+            document.write("Цвет фона этой страницы <B>" + bgc + "</B>."); 
+            document.write("<BR>Цвет текста этой страницы <B>" + fgc + "</B>."); 
+            document.write("<BR>Цвет ссылок этой страницы <B>" + lc + "</B>."); 
+            document.write("<BR>Цвет активной ссылки этой страницы <B>" + al + "</B>."); 
+            document.write("<BR>Цвет посещенной ссылки этой страницы <B>" + vlc + "</B>."); 
+            document.write("<BR>URL этой страницы <B>" + url + "</B>."); 
+            document.write("<BR>До этого вы были на странице <B>" + ref + "</B>."); 
+            document.write("Заголовок этой страницы: <B>New Header</B>.<br>"); 
+            document.write("<BR>Последние изменения в документ внесены: <B>" + lm + "</B>.");
+        }
+    </script>
+</head> 
+<body> 
+    <button onclick="show()">Показать свойства документа</button>
+</body> 
+</html>

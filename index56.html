@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Свойства объекта Document</title>
+    </head>
+    <body>
+        <script language="javascript">
+            var bgc = document.bgColor;
+            var fgc = document.fgColor;
+            var lc = document.linkColor;
+            var al = document.alinkColor;
+            var vlc = document.vlinkColor;
+            var url = document.location;
+            var ref = document.referrer;
+            var t = document.title;
+            var lm = document.lastModified;
+            document.write("Цвет фона этой страницы <B>" + bgc + "</B>.");
+            document.write("<BR>Цвет текста этой страницы <B>" + fgc + "</B>.");
+            document.write("<BR>Цвет ссылок этой страницы <B>" + lc + "</B>.");
+            document.write("<BR>Цвет активной ссылки этой страницы <B>" + al + "</B>.");
+            document.write("<BR>Цвет посещенной ссылки этой страницы <B>" + vlc + "</B>.");
+            document.write("<BR>URL этой страницы <B>" + url + "</B>.");
+            document.write("<BR>До этого вы были на странице <B>" + ref + "</B>.");
+            document.write("<BR>Заголовок этой страницы <B>" + t + "</B>.");
+            document.write("<BR>Последние изменения в документ внесены: <B>" + lm + "</B>.");
+        </script>
+    </body>
+</html>

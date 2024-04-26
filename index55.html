@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Navigator</title>
+        <script language="javascript">
+            var firstn = window.prompt("Введите Ваше имя: ", "Ваше имя");
+
+            function welcome() {
+                var appname = navigator.appName;
+                var appver = navigator.appVersion;
+                window.alert("Привет, " + firstn + "! Вы используете " +
+                             appname + ". Версия" + appver + ". Спасибо за Ваш визит!");
+            }
+
+            function writename() {
+                document.write(firstn + ".");
+            }
+        </script>
+    </head>
+    <body onLoad="welcome()">
+        Добро пожаловать,
+        <script language="JavaScript">
+            writename();
+        </script>
+    </body>
+</html>
